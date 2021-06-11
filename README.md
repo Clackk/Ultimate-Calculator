@@ -5,4 +5,5 @@ This program is still very rough around the edges and requires Python to be inst
 
 # Initial Screen
 ![image](https://user-images.githubusercontent.com/84045381/121619002-6ca4a280-ca2d-11eb-9bec-7ecc0041f3f4.png)
+
 Pretty, right?
