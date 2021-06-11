@@ -1,0 +1,2 @@
+# Ultimate-Calculator
+A Python based calculator written upon my earlier created shrek calculator which was based upon a meme, the premise being that the day could be measured by how many times you could watch shrek in 24 hours. each time passing equivalent to the movie's length would be a "shrek" and would be counted like hours. (Around 18 shreks fit in a day). From there I expanded to add a fly to horsepower converter and a few other extremely useful programs. Thennnn I deleted all of it on accident and started over. So here we are!
