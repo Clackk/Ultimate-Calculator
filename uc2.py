@@ -20,6 +20,8 @@ while running:
     print ("| Enter 3 for an UwU                                                       |")
     print ("| Enter info at the beginning of any program for that program's information|")
     print ("| Enter cancel to end the program at any point                             |")
+    print ("| Enter 4 for a list of world Hooters Freedom Index                        |")
+    print ("| Enter 5 for Hooters Freedom Index calculator                             |")
     print ("---------------------------------------------------------------------------")
     print (" ")
     calc_select = (input("Please choose what program you would like to use: "))
@@ -139,6 +141,138 @@ while running:
           print (" ")
           print ("Grassbird Nation")
           running = False
+    elif calc_select == '4':
+        hfi = (input("Please enter the country (or Texas or Florida) you would like to view the Hooters Freedom Index: (for countries with multiple words, use capital letters of first letter of each word. e.g. United States of America = USA: "))
+        if hfi == 'USA':
+            print (" ")
+            print ("The Hooters Freedom Index of the United States of America is 5,940.1")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'Canada': 
+            print (" ")
+            print ("The Hooters Freedom Index of Canada is 69,923.67")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'Mexico': 
+            print (" ")
+            print ("Unfortunately, Mexico has not publically released the amount of employees work for the government. Therefore we cannot accurately measure their Hooters Freedom Index, though it can be inferred it is around 12000")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'China': 
+            print (" ")
+            print ("The Hooters Freedom Index of China is 2,500,000")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'UK': 
+            print (" ")
+            print ("The Hooters Freedom Index of The United Kingdom is 5,500,000")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'Thailand': 
+            print (" ")
+            print ("The Hooters Freedom Index of Thailand is 65,171.4")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'Germany': 
+            print (" ")
+            print ("The Hooters Freedom Index of Germany is 2,500,000")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'Texas': 
+            print (" ")
+            print ("The Hooters Freedom Index of Texas is 2601")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'Florida': 
+            print (" ")
+            print ("The Hooters Freedom Index of Florida is 22,630.61")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'info': 
+            print (" ")
+            print ("The Hooters Freedom Index was devised in AP Gov while looking at China's civil freedoms index and Hooters merch at the same time, it is calculated by number of government employees divided by hooters location in a given country.")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'California': 
+            print (" ")
+            print ("The Hooters Freedom Index of California is 87,083.34")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        else:
+            restart = (input("Unfortunately your Hooter Freedom Index request was not on file or was completely illeterate -_-, do you want to try again?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+    elif calc_select == '5':
+            gov = float(input("Please input the amount of government employees in the institution you would like to analyze: "))
+            hoot = float(input("Please input the number of Hooters locations within your institution: "))
+            boobie = gov / hoot
+            print (" ")
+            print ("The Hooters Freedom Index of your institution is " + str(boobie))
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
