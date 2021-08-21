@@ -1,4 +1,4 @@
-#Ultimate Calculator V2.3.0
+#Ultimate Calculator V2.4.0
 import sys
 shrekruntime = 95
 soviet = 36291240
@@ -11,7 +11,7 @@ print ("| |__| | | |_| | |___| (_| | | (__     \  /   / /_ ")
 print (" \____/|_|\__|_|\_____\__,_|_|\___|     \/   |____|")
 print ("--------------------------/")
 print ("Warning: input is case sensitive, please put your answers in lowercase.")
-print ("Thank you for using Ultimate Calculator V2.3.0!")
+print ("Thank you for using Ultimate Calculator V2.4.0!")
 print (" ")
 while running:
     print ("____________________________________________________________________________")
