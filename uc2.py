@@ -294,7 +294,7 @@ while running:
                     sys.stdout.write('\rEstablishing Secure Connection ' + c)
                     sys.stdout.flush()
                     time.sleep(0.1)
-                sys.stdout.write('\rDone!     ')
+                sys.stdout.write('\rConnection Established    ')
 
             t = threading.Thread(target=animate)
             t.start()
@@ -302,18 +302,10 @@ while running:
             #long process here
             time.sleep(10)
             done = True
+            time.sleep(1)
             print (" ")
-            print ("                            Secret Menu                                     ")
-            print ("____________________________________________________________________________")
-            print ("| Enter 1 for placeholder                                                  |")
-            print ("| Enter 2 for craig                                                        |")
-            print ("| Enter 3 for placeholder                                                  |")
-            print ("| Enter info at the beginning of any program for that program's information|")
-            print ("| Enter cancel to end the program at any point                             |")
-            print ("| Enter 4 for placeholder                                                  |")
-            print ("| Enter 5 for placeholder                                                  |")
-            print ("----------------------------------------------------------------------------")
-            print (" ")
+            print ("Please log in")
+            time.sleep(.5)
             running = False
     else:
         print ("------------------------------------------------------------------------------")
