@@ -288,7 +288,7 @@ while running:
             done = False
             #here is the animation
             def animate():
-                for c in itertools.cycle(['a', 'r', 'x', 'o', 'Q', '4', 'C', 'i', 'G',]):
+                for c in itertools.cycle(['|', '/', '-', '\\']):
                     if done:
                         break
                     sys.stdout.write('\rEstablishing Secure Connection ' + c)
@@ -304,9 +304,20 @@ while running:
             done = True
             time.sleep(1)
             print (" ")
+            print ("Bruh Industries V2.45")
+            print (" ")
             print ("Please log in")
+            user = (input("Username: "))
+            pas = (input("Password: "))
+            combo = user + pas
             time.sleep(.5)
-            running = False
+            if combo == 'craigbruh':
+                print ("yuh")
+                running = False
+            else:
+                running = False
+            
+                
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
