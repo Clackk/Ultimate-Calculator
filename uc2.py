@@ -1,5 +1,8 @@
 #Ultimate Calculator V2.4.0
 import sys
+import time
+import itertools
+import threading
 shrekruntime = 95
 soviet = 36291240
 running = True
@@ -281,6 +284,37 @@ while running:
             else: 
                 print ("Hooder")
                 running = False
+    elif calc_select == 'qing dynasty':
+            done = False
+            #here is the animation
+            def animate():
+                for c in itertools.cycle(['a', 'r', 'x', 'o', 'Q', '4', 'C', 'i', 'G',]):
+                    if done:
+                        break
+                    sys.stdout.write('\rEstablishing Secure Connection ' + c)
+                    sys.stdout.flush()
+                    time.sleep(0.1)
+                sys.stdout.write('\rDone!     ')
+
+            t = threading.Thread(target=animate)
+            t.start()
+
+            #long process here
+            time.sleep(10)
+            done = True
+            print (" ")
+            print ("                            Secret Menu                                     ")
+            print ("____________________________________________________________________________")
+            print ("| Enter 1 for placeholder                                                  |")
+            print ("| Enter 2 for craig                                                        |")
+            print ("| Enter 3 for placeholder                                                  |")
+            print ("| Enter info at the beginning of any program for that program's information|")
+            print ("| Enter cancel to end the program at any point                             |")
+            print ("| Enter 4 for placeholder                                                  |")
+            print ("| Enter 5 for placeholder                                                  |")
+            print ("----------------------------------------------------------------------------")
+            print (" ")
+            running = False
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
