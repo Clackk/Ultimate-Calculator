@@ -253,6 +253,14 @@ while running:
             else: 
                 print ("Hooder")
                 running = False
+        elif hfi == 'cancel':
+            restart = (input("would you like to choose another program?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print (" ")
+                print ("Chungus")
+                running = False
         else:
             restart = (input("Unfortunately your Hooter Freedom Index request was not on file or was completely illeterate -_-, do you want to try again?: "))
             if restart == 'yes':
