@@ -24,6 +24,7 @@ while running:
     print ("| Enter info at the beginning of any program for that program's information|")
     print ("| Enter cancel to end the program at any point                             |")
     print ("| Enter 4 for a list of world Hooters Freedom Index                        |")
+    print ("| Enter back at the beginning of a program to go back                      |")
     print ("| Enter 5 for Hooters Freedom Index calculator                             |")
     print ("---------------------------------------------------------------------------")
     print (" ")
@@ -63,6 +64,10 @@ while running:
      elif time_selection == 'cancel':
          running = False
      elif time_selection == 'info':
+       print (" ")
+       print ("Info")
+       print ("---------------------")
+       print (" ")
        print ("Created out of the boredom of 8th grade, used extensively in band class")
        print ("Inspired by a Cowbelly meme")
        print ("The first calculator")
@@ -71,7 +76,21 @@ while running:
          running = True
        else:
          running = False
+     elif time_selection == 'back':
+         running = True
+     else:
+         print (" ")
+         print (" what? ")
+         print (" ")
+         restart = (input("restart?: "))
+         if restart == 'yes':
+                running = True
+         else:
+               running = False
     elif calc_select == '2':
+        print (" ")
+        print ("Soviet Union Calculator V2")
+        print ("--------------------------")
         time_selection = (input("Would You like To Calculate your Soviet Union time in Hours or Minutes?: "))
         if time_selection =='hours':
          timeinput_hours = float(input("How Many Hours Would You Like to Calculate?: "))
@@ -145,6 +164,9 @@ while running:
           print ("Grassbird Nation")
           running = False
     elif calc_select == '4':
+        print (" ")
+        print ("Hooters Freedom Index Registry V1.2")
+        print ("-----------------------------------")
         hfi = (input("Please enter the country (or Texas or Florida) you would like to view the Hooters Freedom Index: (for countries with multiple words, use capital letters of first letter of each word. e.g. United States of America = USA: "))
         if hfi == 'USA':
             print (" ")
@@ -272,6 +294,9 @@ while running:
                 print ("Hooder")
                 running = False
     elif calc_select == '5':
+            print (" ")
+            print ("Hooters Freedom Index Calculator")
+            print ("--------------------------------")
             gov = float(input("Please input the amount of government employees in the institution you would like to analyze: "))
             hoot = float(input("Please input the number of Hooters locations within your institution: "))
             boobie = gov / hoot
@@ -312,11 +337,77 @@ while running:
             combo = user + pas
             time.sleep(.5)
             if combo == 'craigbruh':
-                print ("yuh")
-                running = False
+                print ("Login Successful")
+                time.sleep(3)
+                print (" ")
+                print ("Welcome To the Mainframe")
+                print ("------------------------")
+                print (" ")
+                time.sleep(2)
+                print ("1. Half-Life 3")
+                time.sleep(2)
+                print ("2. The Craig Documents")
+                time.sleep(2)
+                print ("3. Info")
+                time.sleep(3)
+                print ("you have 30 seconds to review your options")
+                time.sleep(30)
+                select = (input("Please Choose an option: "))
+                if select == '1':
+                    print (" ")
+                    print ("Half-Life 3 Developer Controls")
+                    time.sleep(2)
+                    def animate():
+                        for c in itertools.cycle(['|', '/', '-', '\\']):
+                            if done:
+                                break
+                        sys.stdout.write('\rLoading, Please Wait |  ' + c)
+                        sys.stdout.flush()
+                        time.sleep(0.1)
+                    sys.stdout.write('\rLoad Failure (error code GAYBEN)    ')
+
+                    t = threading.Thread(target=animate)
+                    t.start()
+
+                    #long process here
+                    time.sleep(100000)
+                    done = True
+                    running = False
+                elif select == '2':
+                    print (" ")
+                    time.sleep(2.5)
+                    print ("SECURITY CLEARANCE: 1AAA")
+                    time.sleep(5)
+                    print ("FILENAME: DESCRIPT.txt")
+                    time.sleep(4)
+                    print (" EVENt-REDACTED is a REDACTED foundation staff  REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED D-3819 REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED among us REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED genitals were obliterated REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED")
+                    running = False
+                elif select == '3':
+                    print ("REDACTED")
+                    running = False
+                else:
+                    running = False
             else:
+                print (" ")
+                print ("Invalid Credentials, Alerting Authorities")
+                time.sleep(3)
+                print ("Goodbye")
+                time.sleep(1)
                 running = False
-            
+                
+    elif calc_select == 'fnafboobie':
+            print (" ")
+            print ("Congradulations, you found the secret chum!")
+            restart = (input("Restart?: "))
+            if restart == 'yes':
+                print (" ")
+                print ("How'd you even find this?")
+                running = True
+            else:
+                print (" ")
+                print ("Exotic Butters")
+                running = False
+
                 
     else:
         print ("------------------------------------------------------------------------------")
