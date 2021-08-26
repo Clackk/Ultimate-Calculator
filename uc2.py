@@ -286,6 +286,8 @@ while running:
                 print (" ")
                 print ("Chungus")
                 running = False
+        elif hfi == 'back':
+            running = True
         else:
             restart = (input("Unfortunately your Hooter Freedom Index request was not on file or was completely illeterate -_-, do you want to try again?: "))
             if restart == 'yes':
@@ -350,8 +352,8 @@ while running:
                 time.sleep(2)
                 print ("3. Info")
                 time.sleep(3)
-                print ("you have 30 seconds to review your options")
-                time.sleep(30)
+                print ("you have 10 seconds to review your options")
+                time.sleep(10)
                 select = (input("Please Choose an option: "))
                 if select == '1':
                     print (" ")
@@ -383,10 +385,27 @@ while running:
                     print (" EVENt-REDACTED is a REDACTED foundation staff  REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED D-3819 REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED among us REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED genitals were obliterated REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED")
                     running = False
                 elif select == '3':
+                    print (" ")
                     print ("REDACTED")
+                    time.sleep(.2)
+                    print ("genitals were obliterated")
+                    time.sleep(.2)
+                    print ("34.5553° N, 69.2075° E")
+                    time.sleep(.2)
+                    print (shrekruntime)
+                    time.sleep(.2)
+                    print (soviet)
+                    time.sleep(5)
+                    print (" ")
+                    print ("got those coordinates down yet?")
+                    time.sleep(.2)
+                    
                     running = False
                 else:
-                    running = False
+                    print ("Invalid Response")
+                    time.sleep(2)
+                    print ("Disconnecting, Have a good day")
+                    running = True
             else:
                 print (" ")
                 print ("Invalid Credentials, Alerting Authorities")
@@ -407,8 +426,46 @@ while running:
                 print (" ")
                 print ("Exotic Butters")
                 running = False
-
-                
+    elif calc_select == 'loop':
+            print (" ")
+            time.sleep(3)
+            print ("You asked for it")
+            time.sleep(3)
+            while True:
+                print ("_")
+                print (" _")
+                print ("  _")
+                print ("   _")
+                print ("    _")
+                print ("   _")
+                print ("  _")
+                print (" _")
+                print ("_")
+    elif calc_select == 'loop2':
+            print (" ")
+            time.sleep(3)
+            print ("You know all the tricks huh")
+            time.sleep(3)
+            while True:
+                print ("bruh")
+                print ("chung")
+                print ("legoo")
+                print ("tryna crash?")
+                print (" sex")
+                print ("   gensi")
+                print ("  10125")
+                print (" mountaign gap")
+                print ("qing dynasty")
+    elif calc_select == 'loop3':
+            print (" ")
+            time.sleep(1)
+            print ("nah")
+            time.sleep(1)
+            print ("No more loops rn")
+            time.sleep(1)
+            print ("go get some choccy milk or something")
+            time.sleep(1)
+            running = True
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
