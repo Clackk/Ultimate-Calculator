@@ -11,6 +11,8 @@ A Python based calculator written upon my earlier created shrek calculator which
 This program is still very rough around the edges and I am still trying to get a good grip on Python as a whole. Please feel free to suggest bug fixes or new features as desired!
 
 # Initial Screen
-![image](https://user-images.githubusercontent.com/84045381/121619002-6ca4a280-ca2d-11eb-9bec-7ecc0041f3f4.png)
+![image](https://user-images.githubusercontent.com/84045381/130983130-f24b1312-dff1-49a8-b1d2-9cef40eda965.png)
+
 
 Pretty, right?
+This program currently has an executable available, however the most up to date will be from the main uc2.py file.
