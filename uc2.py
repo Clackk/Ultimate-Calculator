@@ -1,4 +1,4 @@
-#Ultimate Calculator V2.4.0
+#Ultimate Calculator V2.4.1
 import sys
 import time
 import itertools
@@ -14,7 +14,7 @@ print ("| |__| | | |_| | |___| (_| | | (__     \  /   / /_ ")
 print (" \____/|_|\__|_|\_____\__,_|_|\___|     \/   |____|")
 print ("--------------------------/")
 print ("Warning: input is case sensitive, please put your answers in lowercase.")
-print ("Thank you for using Ultimate Calculator V2.4.0!")
+print ("Thank you for using Ultimate Calculator V2.4.1!")
 print (" ")
 while running:
     print ("____________________________________________________________________________")
@@ -26,6 +26,7 @@ while running:
     print ("| Enter 4 for a list of world Hooters Freedom Index                        |")
     print ("| Enter back at the beginning of a program to go back                      |")
     print ("| Enter 5 for Hooters Freedom Index calculator                             |")
+    print ("| Enter ul for the Software Usage License                                  |")
     print ("---------------------------------------------------------------------------")
     print (" ")
     calc_select = (input("Please choose what program you would like to use: "))
@@ -466,6 +467,47 @@ while running:
             print ("go get some choccy milk or something")
             time.sleep(1)
             running = True
+            
+    elif calc_select == 'ul':
+            print (" ")
+            time.sleep(1)
+            print ("Software Usage License")
+            print ("----------------------")
+            time.sleep(2)
+            print ("This is free and unencumbered software released into the public domain.")
+            print ("Anyone is free to copy, modify, publish, use, compile, sell, or")
+            print ("distribute this software, either in source code form or as a compiled")
+            print ("binary, for any purpose, commercial or non-commercial, and by any")
+            print ("means.")
+            print (" ")
+            print ("In jurisdictions that recognize copyright laws, the author or authors")
+            print ("of this software dedicate any and all copyright interest in the")
+            print ("software to the public domain. We make this dedication for the benefit")
+            print ("of the public at large and to the detriment of our heirs and")
+            print ("successors. We intend this dedication to be an overt act of")
+            print ("relinquishment in perpetuity of all present and future rights to this")
+            print ("software under copyright law.")
+            print (" ")
+            print ("THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,")
+            print ("EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF")
+            print ("MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.")
+            print ("IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR")
+            print ("OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,")
+            print ("ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR")
+            print ("OTHER DEALINGS IN THE SOFTWARE.")
+            print (" ")
+            print ("For more information, please refer to <https://unlicense.org>")
+            print (" ")
+            restart = (input("Restart?: "))
+            if restart == 'yes':
+                print (" ")
+                print ("Good read huh")
+                running = True
+            else:
+                print (" ")
+                print ("chumice")
+                running = False
+
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
