@@ -507,7 +507,76 @@ while running:
                 print (" ")
                 print ("chumice")
                 running = False
-
+    elif calc_select == 'calc':
+            print (" ")
+            print ("Actual Calculator v1.0")
+            print ("______________________")
+            print (" ")
+            op = (input("Enter your operation symbol '+,-,*,/,'"))
+            if op == '+':
+                a = (input("Please enter your first number"))
+                b = (input("Please enter your second number"))
+                ans = a + b
+                print (" ")
+                print (" = " + str(ans) )
+                restart = (input("Restart?: "))
+                if restart == 'yes':
+                    print (" ")
+                    print ("Good read huh")
+                    running = True
+                else:
+                    print (" ")
+                    print ("chumice")
+                    running = False
+            elif op == '-':
+                a = (input("Please enter your first number"))
+                b = (input("Please enter your second number"))
+                ans = a - b
+                print (" ")
+                print (" = " + str(ans) )
+                restart = (input("Restart?: "))
+                if restart == 'yes':
+                    print (" ")
+                    print ("Good read huh")
+                    running = True
+                else:
+                    print (" ")
+                    print ("chumice")
+                    running = False
+            elif op == '*':
+                a = (input("Please enter your first number"))
+                b = (input("Please enter your second number"))
+                ans = a * b
+                print (" ")
+                print (" = " + str(ans) )
+                restart = (input("Restart?: "))
+                if restart == 'yes':
+                    print (" ")
+                    print ("Good read huh")
+                    running = True
+                else:
+                    print (" ")
+                    print ("chumice")
+                    running = False
+            elif op == '/':
+                a = (input("Please enter your first number"))
+                b = (input("Please enter your second number"))
+                ans = a / b
+                print (" ")
+                print (" = " + str(ans) )
+                restart = (input("Restart?: "))
+                if restart == 'yes':
+                    print (" ")
+                    print ("Good read huh")
+                    running = True
+                else:
+                    print (" ")
+                    print ("chumice")
+                    running = False
+            else:
+                print (" ")
+                print (" Invalid input hehe")
+                running = True
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
