@@ -514,60 +514,60 @@ while running:
             print (" ")
             op = (input("Enter your operation symbol '+,-,*,/,'"))
             if op == '+':
-                a = (input("Please enter your first number"))
-                b = (input("Please enter your second number"))
+                a = float(input("Please enter your first number: "))
+                b = float(input("Please enter your second number: "))
                 ans = a + b
                 print (" ")
                 print (" = " + str(ans) )
                 restart = (input("Restart?: "))
                 if restart == 'yes':
                     print (" ")
-                    print ("Good read huh")
+                    print ("yuh")
                     running = True
                 else:
                     print (" ")
                     print ("chumice")
                     running = False
             elif op == '-':
-                a = (input("Please enter your first number"))
-                b = (input("Please enter your second number"))
+                a = float(input("Please enter your first number: "))
+                b = float(input("Please enter your second number: "))
                 ans = a - b
                 print (" ")
                 print (" = " + str(ans) )
                 restart = (input("Restart?: "))
                 if restart == 'yes':
                     print (" ")
-                    print ("Good read huh")
+                    print ("aight")
                     running = True
                 else:
                     print (" ")
                     print ("chumice")
                     running = False
             elif op == '*':
-                a = (input("Please enter your first number"))
-                b = (input("Please enter your second number"))
+                a = float(input("Please enter your first number: "))
+                b = float(input("Please enter your second number: "))
                 ans = a * b
                 print (" ")
                 print (" = " + str(ans) )
                 restart = (input("Restart?: "))
                 if restart == 'yes':
                     print (" ")
-                    print ("Good read huh")
+                    print ("OK boss")
                     running = True
                 else:
                     print (" ")
                     print ("chumice")
                     running = False
             elif op == '/':
-                a = (input("Please enter your first number"))
-                b = (input("Please enter your second number"))
+                a = float(input("Please enter your first number: "))
+                b = float(input("Please enter your second number: "))
                 ans = a / b
                 print (" ")
                 print (" = " + str(ans) )
                 restart = (input("Restart?: "))
                 if restart == 'yes':
                     print (" ")
-                    print ("Good read huh")
+                    print ("sounds good")
                     running = True
                 else:
                     print (" ")
