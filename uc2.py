@@ -27,7 +27,8 @@ while running:
     print ("| Enter back at the beginning of a program to go back                      |")
     print ("| Enter 5 for Hooters Freedom Index calculator                             |")
     print ("| Enter ul for the Software Usage License                                  |")
-    print ("---------------------------------------------------------------------------")
+    print ("| Enter calc for a basic calculator                                        |")
+    print ("----------------------------------------------------------------------------")
     print (" ")
     calc_select = (input("Please choose what program you would like to use: "))
     if calc_select == '1':
@@ -512,7 +513,7 @@ while running:
             print ("Actual Calculator v1.0")
             print ("______________________")
             print (" ")
-            op = (input("Enter your operation symbol '+,-,*,/,'"))
+            op = (input("Enter your operation symbol +,-,*,/, "))
             if op == '+':
                 a = float(input("Please enter your first number: "))
                 b = float(input("Please enter your second number: "))
@@ -561,18 +562,33 @@ while running:
             elif op == '/':
                 a = float(input("Please enter your first number: "))
                 b = float(input("Please enter your second number: "))
-                ans = a / b
-                print (" ")
-                print (" = " + str(ans) )
-                restart = (input("Restart?: "))
-                if restart == 'yes':
+                chung = a + b
+                if chung == 0 :
                     print (" ")
-                    print ("sounds good")
-                    running = True
+                    print ("bruh you can't divide by zero")
+                    print (" ")
+                    restart = (input("Restart?: "))
+                    if restart == 'yes':
+                        print (" ")
+                        print ("sounds good")
+                        running = True
+                    else:
+                        print (" ")
+                        print ("chumice")
+                        running = False
                 else:
+                    ans = a / b
                     print (" ")
-                    print ("chumice")
-                    running = False
+                    print (" = " + str(ans) )
+                    restart = (input("Restart?: "))
+                    if restart == 'yes':
+                        print (" ")
+                        print ("sounds good")
+                        running = True
+                    else:
+                        print (" ")
+                        print ("chumice")
+                        running = False
             else:
                 print (" ")
                 print (" Invalid input hehe")
