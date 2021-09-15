@@ -1,4 +1,10 @@
-#Ultimate Calculator V2.4.1
+#Ultimate Calculator V2.4.5
+#Shrek Calculator V8.2
+#Soviet Union Calculator V2
+#Hooters Freedom Registry V1.2
+#Hooters Freedom Calculator V1
+#Bruh Industries Terminal V2.4.5
+#Basic Calculator V1.1
 import sys
 import time
 import itertools
@@ -14,7 +20,7 @@ print ("| |__| | | |_| | |___| (_| | | (__     \  /   / /_ ")
 print (" \____/|_|\__|_|\_____\__,_|_|\___|     \/   |____|")
 print ("--------------------------/")
 print ("Warning: input is case sensitive, please put your answers in lowercase.")
-print ("Thank you for using Ultimate Calculator V2.4.1!")
+print ("Thank you for using Ultimate Calculator V2.4.5!")
 print (" ")
 while running:
     print ("____________________________________________________________________________")
@@ -510,7 +516,7 @@ while running:
                 running = False
     elif calc_select == 'calc':
             print (" ")
-            print ("Actual Calculator v1.0")
+            print ("Actual Calculator v1.1")
             print ("______________________")
             print (" ")
             op = (input("Enter your operation symbol +,-,*,/, "))
