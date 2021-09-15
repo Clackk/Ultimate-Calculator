@@ -4,12 +4,14 @@
 
 I will support security fixes of all older versions, however I will mainly be concerned with the security of the latest release.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 2.0.x   | :white_check_mark: |
-| 2.1.x   | :white_check_mark: |
-| 2.2.x   | :white_check_mark: |
-| 2.3.x   | :white_check_mark: |
+| Version  | Supported          |
+| -------  | ------------------ |
+| 2.0.x    | :white_check_mark: |
+| 2.1.x    | :white_check_mark: |
+| 2.2.x    | :white_check_mark: |
+| 2.3.x    | :white_check_mark: |
+| 2.4.x    | :white_check_mark: |
+| your mom | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
