@@ -5,10 +5,12 @@
 #Hooters Freedom Calculator V1
 #Bruh Industries Terminal V2.4.5
 #Basic Calculator V1.1
+#Thanos Snap Calculator Alpha 1.2
 import sys
 import time
 import itertools
 import threading
+import random
 shrekruntime = 95
 soviet = 36291240
 running = True
@@ -618,7 +620,30 @@ while running:
             print (" ")
             print ("chumice")
             running = False
-                        
+    elif calc_select == 'thanos':
+        than = ['yes', 'no']
+        print (" ")
+        print ("THANOS SNAP Calculator")
+        print ("______________________")
+        time.sleep(2)
+        print ("did you survive the snap?")
+        print (" ")
+        time.sleep(2)
+        print ("calculating...")
+        print (" ")
+        time.sleep(3)
+        print(random.choice(than))
+        print (" ")
+        restart = (input("Restart?: "))
+        if restart == 'yes':
+            print (" ")
+            print ("sounds good")
+            running = True
+        else:
+            print (" ")
+            print ("chumice")
+            running = False
+              
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
