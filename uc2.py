@@ -599,6 +599,26 @@ while running:
                 print (" ")
                 print (" Invalid input hehe")
                 running = True
+    elif calc_select == 'var':
+        print (" ")
+        print ("Variable Chart")
+        print ("--------------")
+        print (" ")
+        print (running)
+        print (shrekruntime)
+        print (soviet)
+        print (calc_select)
+        print (" ")
+        restart = (input("Restart?: "))
+        if restart == 'yes':
+            print (" ")
+            print ("sounds good")
+            running = True
+        else:
+            print (" ")
+            print ("chumice")
+            running = False
+                        
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
