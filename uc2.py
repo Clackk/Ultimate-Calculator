@@ -179,7 +179,7 @@ while running:
         print (" ")
         print ("Hooters Freedom Index Registry V1.2")
         print ("-----------------------------------")
-        hfi = (input("Please enter the country (or Texas or Florida) you would like to view the Hooters Freedom Index: (for countries with multiple words, use capital letters of first letter of each word. e.g. United States of America = USA: "))
+        hfi = (input("Please enter the country (or Texas or Florida) you would like to view the Hooters Freedom Index: (for countries with multiple words, use capital letters of first letter of each word. e.g. United States of America = USA, type all for all entries: "))
         if hfi == 'USA':
             print (" ")
             print ("The Hooters Freedom Index of the United States of America is 5,940.1")
@@ -283,6 +283,39 @@ while running:
         elif hfi == 'California': 
             print (" ")
             print ("The Hooters Freedom Index of California is 87,083.34")
+            print (" ")
+            restart = (input("Would you like to see another Hooters Freedom Index score?: "))
+            if restart == 'yes':
+                running = True
+            else: 
+                print ("Hooder")
+                running = False
+        elif hfi == 'all':
+            print (" ")
+            print ("All Hooters Freedom Index Entries")
+            print ("_________________________________")
+            print (" ")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of the United States of America is 5,940.1")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of Canada is 69,923.67")
+            time.sleep(1)
+            print ("Unfortunately, Mexico has not publically released the amount of employees work for the government. Therefore we cannot accurately measure their Hooters Freedom Index, though it can be inferred it is around 12000")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of China is 2,500,000")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of The United Kingdom is 5,500,000")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of Thailand is 65,171.4")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of Germany is 2,500,000")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of Texas is 2601")
+            time.sleep(1)
+            print ("The Hooters Freedom Index of Florida is 22,630.61")
+            time.sleep(1)
+            print (" ")
+            print ("Updated Actively")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
             if restart == 'yes':
