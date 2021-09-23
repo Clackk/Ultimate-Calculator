@@ -679,6 +679,12 @@ while running:
             print ("chumice")
             running = False
               
+    elif calc_select == 'marble-h':
+        print (" ")
+        print ("your cute hehe <3")
+        print ("                -Clackk")
+        print (" ")
+        running = False 
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
