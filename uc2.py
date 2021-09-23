@@ -1,4 +1,4 @@
-#Ultimate Calculator V2.4.5
+#Ultimate Calculator V2.5.0
 #Shrek Calculator V8.2
 #Soviet Union Calculator V2
 #Hooters Freedom Registry V1.2
@@ -22,7 +22,7 @@ print ("| |__| | | |_| | |___| (_| | | (__     \  /   / /_ ")
 print (" \____/|_|\__|_|\_____\__,_|_|\___|     \/   |____|")
 print ("--------------------------/")
 print ("Warning: input is case sensitive, please put your answers in lowercase.")
-print ("Thank you for using Ultimate Calculator V2.4.5!")
+print ("Thank you for using Ultimate Calculator V2.5.0!")
 print (" ")
 while running:
     print ("_______________________________________________________________________________")
@@ -46,7 +46,7 @@ while running:
      print ("Shrek Calculator V8.2")
      print ("---------------------")
      time_selection = (input("Would You like To Calculate Shrek Time in Hours or Minutes?: "))
-     if time_selection =='hours':
+     if time_selection.lower() =='hours':
          timeinput_hours = float(input("How Many Hours Would You Like to Calculate?: "))
          hours_2 = 60 * timeinput_hours 
          final_hours_input = hours_2 / shrekruntime
@@ -54,28 +54,28 @@ while running:
          print ("The amount of times you could watch Shrek 1 in " + str(timeinput_hours) + " hours is")
          print (str(final_hours_input_rounded) + " playthroughs.")
          restart = (input("Would you like to calculate another number?: "))
-         if restart == 'yes':
+         if restart.lower() == 'yes':
              running = True
          else: 
              print ("Aight bye chief")
              running = False
-     elif time_selection == 'minutes':
+     elif time_selection.lower() == 'minutes':
          timeinput_hours = float(input("How Many Minutes Would You Like to Calculate?: "))
          min_1 = timeinput_hours / shrekruntime
          answer = round(min_1,4)
          print ("The amount of times you could watch Shrek 1 in " + str(timeinput_hours) + " minutes is")
          print (str(answer) + " playthroughs.")
          restart = (input("Would you like to calculate another number?: "))
-         if restart == 'yes':
+         if restart.lower() == 'yes':
              running = True
          else: 
              print ("Aight bye chief")
              running = False
-     elif time_selection == 'pp':
+     elif time_selection.lower() == 'pp':
              print ("UwU")
-     elif time_selection == 'cancel':
+     elif time_selection.lower() == 'cancel':
          running = False
-     elif time_selection == 'info':
+     elif time_selection.lower() == 'info':
        print (" ")
        print ("Info")
        print ("---------------------")
@@ -84,27 +84,27 @@ while running:
        print ("Inspired by a Cowbelly meme")
        print ("The first calculator")
        restart = (input("restart?: "))
-       if restart == 'yes':
+       if restart.lower() == 'yes':
          running = True
        else:
          running = False
-     elif time_selection == 'back':
+     elif time_selection.lower() == 'back':
          running = True
      else:
          print (" ")
          print (" what? ")
          print (" ")
          restart = (input("restart?: "))
-         if restart == 'yes':
+         if restart.lower() == 'yes':
                 running = True
          else:
                running = False
-    elif calc_select == '2':
+    elif calc_select.lower() == '2':
         print (" ")
         print ("Soviet Union Calculator V2")
         print ("--------------------------")
         time_selection = (input("Would You like To Calculate your Soviet Union time in Hours or Minutes?: "))
-        if time_selection =='hours':
+        if time_selection.lower() =='hours':
          timeinput_hours = float(input("How Many Hours Would You Like to Calculate?: "))
          hours_2 = 60 * timeinput_hours 
          final_hours_input = hours_2 / soviet
@@ -112,48 +112,48 @@ while running:
          print ("The amount of time the Soviet Union could have existed in " + str(timeinput_hours) + " hours is")
          print (str(final_hours_input_rounded) + " times")
          restart = (input("Would you like to calculate another number?: "))
-         if restart == 'yes':
+         if restart.lower() == 'yes':
              running = True
          else: 
              print ("Aight bye comrade")
              running = False
-        elif  time_selection == 'minutes':
+        elif  time_selection.lower() == 'minutes':
          timeinput_hours = float(input("How Many Minutes Would You Like to Calculate?: "))
          min_1 = timeinput_hours / soviet
          answer = round(min_1,8)
          print ("The amount of times the Soviet Union could have existed through " + str(timeinput_hours) + " minutes is")
          print (str(answer) + " times")
          restart = (input("Would you like to calculate another number?: "))
-         if restart == 'yes':
+         if restart.lower() == 'yes':
              running = True
          else: 
              print ("Aight bye comrade")
              running = False
-    elif calc_select == '3':
+    elif calc_select.lower() == '3':
         print (" ")
         print ("UwU")
         print ("")
         restart = (input("Restart?: "))
-        if restart == 'yes':
+        if restart.lower() == 'yes':
           running = True
         else:
           print (" ")
           print ("See ya later bruh")
           running = False
-    elif calc_select == 'cancel':
+    elif calc_select.lower() == 'cancel':
         print (" ")
         print ("                                          bruh                     ")
         running = False
-    elif calc_select == '69':
+    elif calc_select.lower() == '69':
         print (" ")
         print ("nice")
         print (" ")
         restart = (input("Restart?: "))
-        if restart == 'yes':
+        if restart.lower() == 'yes':
           running = True
         else:
           running = False
-    elif calc_select == 'info':
+    elif calc_select.lower() == 'info':
         print (" ")
         print ("Ultimate Calculator V2")
         print ("The very first iteration was a 20 or so lines of code that converted")
@@ -167,7 +167,7 @@ while running:
         print ("UwU")
         print (" ")
         restart = (input("Restart?: "))
-        if restart == 'yes':
+        if restart.lower() == 'yes':
           print (" ")
           print ("Back to da show!")
           running = True
@@ -175,122 +175,122 @@ while running:
           print (" ")
           print ("Grassbird Nation")
           running = False
-    elif calc_select == '4':
+    elif calc_select.lower() == '4':
         print (" ")
         print ("Hooters Freedom Index Registry V1.2")
         print ("-----------------------------------")
         hfi = (input("Please enter the country (or Texas or Florida) you would like to view the Hooters Freedom Index: (for countries with multiple words, use capital letters of first letter of each word. e.g. United States of America = USA, type all for all entries: "))
-        if hfi == 'USA':
+        if hfi.lower() == 'usa':
             print (" ")
             print ("The Hooters Freedom Index of the United States of America is 5,940.1")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'Canada': 
+        elif hfi.lower() == 'canada': 
             print (" ")
             print ("The Hooters Freedom Index of Canada is 69,923.67")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'Mexico': 
+        elif hfi.lower() == 'mexico': 
             print (" ")
             print ("Unfortunately, Mexico has not publically released the amount of employees work for the government. Therefore we cannot accurately measure their Hooters Freedom Index, though it can be inferred it is around 12000")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'China': 
+        elif hfi.lower() == 'china': 
             print (" ")
             print ("The Hooters Freedom Index of China is 2,500,000")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'UK': 
+        elif hfi.lower() == 'uk': 
             print (" ")
             print ("The Hooters Freedom Index of The United Kingdom is 5,500,000")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'Thailand': 
+        elif hfi.lower() == 'thailand': 
             print (" ")
             print ("The Hooters Freedom Index of Thailand is 65,171.4")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'Germany': 
+        elif hfi.lower() == 'germany': 
             print (" ")
             print ("The Hooters Freedom Index of Germany is 2,500,000")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'Texas': 
+        elif hfi.lower() == 'texas': 
             print (" ")
             print ("The Hooters Freedom Index of Texas is 2601")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'Florida': 
+        elif hfi.lower() == 'florida': 
             print (" ")
             print ("The Hooters Freedom Index of Florida is 22,630.61")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'info': 
+        elif hfi.lower() == 'info': 
             print (" ")
             print ("The Hooters Freedom Index was devised in AP Gov while looking at China's civil freedoms index and Hooters merch at the same time, it is calculated by number of government employees divided by hooters location in a given country.")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'California': 
+        elif hfi.lower() == 'california': 
             print (" ")
             print ("The Hooters Freedom Index of California is 87,083.34")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'all':
+        elif hfi.lower() == 'all':
             print (" ")
             print ("All Hooters Freedom Index Entries")
             print ("_________________________________")
@@ -318,29 +318,29 @@ while running:
             print ("Updated Actively")
             print (" ")
             restart = (input("Would you like to see another Hooters Freedom Index score?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-        elif hfi == 'cancel':
+        elif hfi.lower() == 'cancel':
             restart = (input("would you like to choose another program?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print (" ")
                 print ("Chungus")
                 running = False
-        elif hfi == 'back':
+        elif hfi.lower() == 'back':
             running = True
         else:
             restart = (input("Unfortunately your Hooter Freedom Index request was not on file or was completely illeterate -_-, do you want to try again?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 running = True
             else: 
                 print ("Hooder")
                 running = False
-    elif calc_select == '5':
+    elif calc_select.lower() == '5':
             print (" ")
             print ("Hooters Freedom Index Calculator")
             print ("--------------------------------")
@@ -356,7 +356,7 @@ while running:
             else: 
                 print ("Hooder")
                 running = False
-    elif calc_select == 'qing dynasty':
+    elif calc_select.lower() == 'qing dynasty':
             done = False
             #here is the animation
             def animate():
@@ -400,7 +400,7 @@ while running:
                 print ("you have 10 seconds to review your options")
                 time.sleep(10)
                 select = (input("Please Choose an option: "))
-                if select == '1':
+                if select.lower() == '1':
                     print (" ")
                     print ("Half-Life 3 Developer Controls")
                     time.sleep(2)
@@ -420,7 +420,7 @@ while running:
                     time.sleep(100000)
                     done = True
                     running = False
-                elif select == '2':
+                elif select.lower() == '2':
                     print (" ")
                     time.sleep(2.5)
                     print ("SECURITY CLEARANCE: 1AAA")
@@ -429,7 +429,7 @@ while running:
                     time.sleep(4)
                     print (" EVENt-REDACTED is a REDACTED foundation staff  REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED D-3819 REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED among us REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED genitals were obliterated REDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTEDREDACTED REDACTED")
                     running = False
-                elif select == '3':
+                elif select.lower() == '3':
                     print (" ")
                     print ("REDACTED")
                     time.sleep(.2)
@@ -459,7 +459,7 @@ while running:
                 time.sleep(1)
                 running = False
                 
-    elif calc_select == 'fnafboobie':
+    elif calc_select.lower() == 'fnafboobie':
             print (" ")
             print ("Congradulations, you found the secret chum!")
             restart = (input("Restart?: "))
@@ -471,7 +471,7 @@ while running:
                 print (" ")
                 print ("Exotic Butters")
                 running = False
-    elif calc_select == 'loop':
+    elif calc_select.lower() == 'loop':
             print (" ")
             time.sleep(3)
             print ("You asked for it")
@@ -486,7 +486,7 @@ while running:
                 print ("  _")
                 print (" _")
                 print ("_")
-    elif calc_select == 'loop2':
+    elif calc_select.lower() == 'loop2':
             print (" ")
             time.sleep(3)
             print ("You know all the tricks huh")
@@ -501,7 +501,7 @@ while running:
                 print ("  10125")
                 print (" mountaign gap")
                 print ("qing dynasty")
-    elif calc_select == 'loop3':
+    elif calc_select.lower() == 'loop3':
             print (" ")
             time.sleep(1)
             print ("nah")
@@ -512,7 +512,7 @@ while running:
             time.sleep(1)
             running = True
             
-    elif calc_select == 'ul':
+    elif calc_select.lower() == 'ul':
             print (" ")
             time.sleep(1)
             print ("Software Usage License")
@@ -543,7 +543,7 @@ while running:
             print ("For more information, please refer to <https://unlicense.org>")
             print (" ")
             restart = (input("Restart?: "))
-            if restart == 'yes':
+            if restart.lower() == 'yes':
                 print (" ")
                 print ("Good read huh")
                 running = True
@@ -551,7 +551,7 @@ while running:
                 print (" ")
                 print ("chumice")
                 running = False
-    elif calc_select == 'calc':
+    elif calc_select.lower() == 'calc':
             print (" ")
             print ("Actual Calculator v1.1")
             print ("______________________")
@@ -611,7 +611,7 @@ while running:
                     print ("bruh you can't divide by zero")
                     print (" ")
                     restart = (input("Restart?: "))
-                    if restart == 'yes':
+                    if restart.lower() == 'yes':
                         print (" ")
                         print ("sounds good")
                         running = True
@@ -624,7 +624,7 @@ while running:
                     print (" ")
                     print (" = " + str(ans) )
                     restart = (input("Restart?: "))
-                    if restart == 'yes':
+                    if restart.lower() == 'yes':
                         print (" ")
                         print ("sounds good")
                         running = True
@@ -636,7 +636,7 @@ while running:
                 print (" ")
                 print (" Invalid input hehe")
                 running = True
-    elif calc_select == 'var':
+    elif calc_select.lower() == 'var':
         print (" ")
         print ("Variable Chart")
         print ("--------------")
@@ -647,7 +647,7 @@ while running:
         print (calc_select)
         print (" ")
         restart = (input("Restart?: "))
-        if restart == 'yes':
+        if restart.lower() == 'yes':
             print (" ")
             print ("sounds good")
             running = True
@@ -655,7 +655,7 @@ while running:
             print (" ")
             print ("chumice")
             running = False
-    elif calc_select == 'thanos':
+    elif calc_select.lower() == 'thanos':
         than = ['yes', 'no']
         print (" ")
         print ("THANOS SNAP Calculator")
