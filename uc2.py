@@ -13,6 +13,7 @@ import threading
 import random
 shrekruntime = 95
 soviet = 36291240
+flyhorse=24950000
 running = True
 print (" _    _ _ _   _  _____      _       __      _____  ")
 print ("| |  | | | | (_)/ ____|    | |      \ \    / /__ \ ")
@@ -38,6 +39,7 @@ while running:
     print ("| Enter calc for a basic calculator                                           |")
     print ("| Enter thanos for the Thanos Snap Survival Calculator                        |")
     print ("| Enter var for a Variable Chart                                              |")
+    print ("| Enter 6 for a Fly to Horsepower Conversion Calculator                       |")
     print ("-------------------------------------------------------------------------------")
     print (" ")
     calc_select = (input("Please choose what program you would like to use: "))
@@ -685,6 +687,79 @@ while running:
         print ("                -Clackk")
         print (" ")
         running = False 
+    elif calc_select.lower() == '6':
+        print (" ")
+        print ("Fly to Horsepower Converter v1")
+        print ("______________________________")
+        time.sleep(2)
+        print ("Enter 1 for Fly to Horsepower Conversion")
+        print ("Enter 2 for Horsepower to Fly Conversion")
+        print (" ")
+        time_selection = (input("Please Enter Here: "))
+        print (" ")
+        if time_selection.lower() =='1':
+         timeinput_hours = float(input("How Many Flies Are Present?: "))
+         print (" ")
+         hours_2 = timeinput_hours / flyhorse
+         print ("The amount of horsepower " + str(timeinput_hours) + " flies would make is")
+         print (str(hours_2) + " horsepower")
+         print (" ")
+         restart = (input("Would you like to calculate another number?: "))
+         if restart.lower() == 'yes':
+             running = True
+         else: 
+             print ("Aight bye comrade")
+             running = False
+        elif  time_selection.lower() == '2':
+         timeinput_hours = float(input("How Much horsepower Would You Like To Generate?: "))
+         print ("")
+         min_1 = timeinput_hours * flyhorse
+         print ("The Amount Of Flies You Would Need To Generate " + str(timeinput_hours) + " Horsepower is")
+         print (str(min_1) + " Flies")
+         print (" ")
+         restart = (input("Would you like to calculate another number?: "))
+         if restart.lower() == 'yes':
+             running = True
+         else: 
+             print ("Aight bye comrade")
+             running = False
+        elif time_selection.lower() == 'info':
+            print (" ")
+            print ("Info Section")
+            print ("------------")
+            print ("This calculator was one of the original additions")
+            print ("to the first Ultimate Calculator, as such this updated")
+            print ("edition would not be complete without it.")
+            print (" ")
+            print ("Methodology")
+            print ("-----------")
+            print ("You might be wondering how exactly the calculator figures out")
+            print ("how much horsepower a fly can generate, this conversion")
+            print ("is cheifly held on the figure 24950000, of which is the amount")
+            print ("of flies needed to lift 550 pounds 'presuming it could be done in one minute'")
+            print ("this figure was found by dividing 10 miligrams to the miligram equivalent")
+            print ("of 550 lbs, I was originally going to use the rpm*tourqe /5252 method, however")
+            print ("flies do not rotate at a fixed rpm, or at all really, and their torque surface,")
+            print ("their wings, cannot really accurately be measured due to the fact we cannot")
+            print ("calculate the weight being imparted across the wing under flight, loaded or otherwise")
+            print ("Obviously this calculator uses data extrapolation and should be viewed with caution")
+            print ("before you decide to buy millions of flies to start the next gen package carrier service.")
+            print (" ")
+            restart = (input("Would you like to calculate another number?: "))
+            if restart.lower() == 'yes':
+                running = True
+            else: 
+                print ("Aight bye comrade")
+                running = False
+        else:
+            print ("Sorry bout dat chief but I aint sure what you entered")
+            print (" ")
+            restart = (input("Would you like to calculate another number?: "))
+            if restart.lower() == 'yes':
+                running = True
+            else: 
+                print ("Aight bye comrade")
+                running = False
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
