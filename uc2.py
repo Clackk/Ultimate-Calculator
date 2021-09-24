@@ -6,6 +6,7 @@
 #Bruh Industries Terminal V2.4.5
 #Basic Calculator V1.1
 #Thanos Snap Calculator Alpha 1.2
+#Fly To Horsepower Converter V1
 import sys
 import time
 import itertools
@@ -40,6 +41,7 @@ while running:
     print ("| Enter thanos for the Thanos Snap Survival Calculator                        |")
     print ("| Enter var for a Variable Chart                                              |")
     print ("| Enter 6 for a Fly to Horsepower Conversion Calculator                       |")
+    print ("| Enter 7                                                                     |")
     print ("-------------------------------------------------------------------------------")
     print (" ")
     calc_select = (input("Please choose what program you would like to use: "))
@@ -760,6 +762,38 @@ while running:
             else: 
                 print ("Aight bye comrade")
                 running = False
+    elif calc_select.lower() == '7':
+        print (" ")
+        time.sleep(2)
+        print ("q")
+        time.sleep(1)
+        print ("i")
+        time.sleep(1)
+        print ("n")
+        time.sleep(1)
+        print ("g")
+        time.sleep(1)
+        print (" ")
+        time.sleep(1)
+        print ("d")
+        time.sleep(1)
+        print ("y")
+        time.sleep(1)
+        print ("n")
+        time.sleep(1)
+        print ("a")
+        time.sleep(1)
+        print ("s")
+        time.sleep(1)
+        print ("t")
+        time.sleep(1)
+        print ("y")
+        time.sleep(1)
+        print (" ")
+        time.sleep(1)
+        print ("ERROR 254")
+        print ("Connection Interrupted")
+        running = False
     else:
         print ("------------------------------------------------------------------------------")
         print ("I'm not sure what you entered but it didnt match anything in this program UwU")
