@@ -12,7 +12,8 @@ A Python based calculator written upon my earlier created shrek calculator which
 This program is still very rough around the edges and I am still trying to get a good grip on Python as a whole. Please feel free to suggest bug fixes or new features as desired!
 
 # Initial Screen
-![geg](https://user-images.githubusercontent.com/84045381/131939608-f202f3af-0cc2-477c-8f17-04e3db09c691.PNG)
+![Unbenannt](https://user-images.githubusercontent.com/84045381/135478861-54818f31-c5c4-4b69-a530-c644e189b4fc.PNG)
+
 
 
 
