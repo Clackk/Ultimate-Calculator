@@ -683,7 +683,7 @@ while running:
             print ("chumice")
             running = False
               
-    elif calc_select == 'marble-h':
+    elif calc_select == 'davilos':
         print (" ")
         print ("your cute hehe <3")
         print ("                -Clackk")
