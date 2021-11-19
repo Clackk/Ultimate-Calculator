@@ -388,7 +388,7 @@ while running:
             pas = (input("Password: "))
             combo = user + pas
             time.sleep(.5)
-            if combo == 'craigbruh':
+            if combo == 'megamike':
                 print ("Login Successful")
                 time.sleep(3)
                 print (" ")
@@ -471,6 +471,8 @@ while running:
             if restart == 'yes':
                 print (" ")
                 print ("How'd you even find this?")
+                time.sleep(2)
+                print ("Are you happy now Alex?")
                 running = True
             else:
                 print (" ")
