@@ -8,7 +8,7 @@
 #Thanos Snap Calculator Alpha 1.2
 #Fly To Horsepower Converter V1
 #Big Chungus
-#Clackk 2021
+#Clackk 2022
 import sys
 import time
 import itertools
