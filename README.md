@@ -19,3 +19,4 @@ This program is still very rough around the edges and I am still trying to get a
 
 Pretty, right?
 This program currently has an executable available, however the most up to date will be from the main uc2.py file.
+working on executable issues
