@@ -686,13 +686,7 @@ while running:
             print (" ")
             print ("chumice")
             running = False
-              
-    elif calc_select == 'davilos':
-        print (" ")
-        print ("your cute hehe <3")
-        print ("                -Clackk")
-        print (" ")
-        running = False 
+               
     elif calc_select.lower() == '6':
         print (" ")
         print ("Fly to Horsepower Converter v1")
